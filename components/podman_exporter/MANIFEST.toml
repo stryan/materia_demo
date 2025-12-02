@@ -1,5 +1,5 @@
 Defaults.containerTag = "latest"
-Defaults.Port = 9882
+Defaults.port = 9882
 
 [[Services]]
 Service = "podman_exporter.service"

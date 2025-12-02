@@ -14,5 +14,5 @@ dest = "/root/install_materia.sh"
 
 [[steps]]
 [steps.rsync]
-source = "./age_key.txt"
-dest = "/root/key.txt"
+source = "./materia.env"
+dest = "/root/materia.env"

@@ -1,0 +1,12 @@
+[tools]
+sops = "latest"
+
+[env]
+SOPS_AGE_KEY_FILE = "./key.txt"
+
+[tasks.setup_vm]
+run = [
+  "if virter vm exists materia-demo; then virter vm rm materia-demo; fi",
+  "virter vm run --name materia-demo --id 0 --wait-ssh alma-9",
+  "virter vm exec materia-demo --provision ./virter_provision.toml",
+]

@@ -1,0 +1,18 @@
+components:
+    caddy:
+        containerTag: ENC[AES256_GCM,data:e9UHCqN1lz/i3BmFWA==,iv:IlRr04ELTxi+4UP3OP0EqlSaDCgyPm/rVykmSELNdtw=,tag:YjTk31t25KKuNfYIf5ansQ==,type:str]
+sops:
+    age:
+        - recipient: age1s2sc3dz0vrcmungswpxwnett7ayvzmfuke8vw0w3te36l742kpqs6kg606
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBCNFJVOTRwbTQwNWFDSWFz
+            VWlIMG9mZ241K0J4TEd5N3FvYzJTR1VvcDB3CmxPYllJZUl1NDhUL0huNEtISmM5
+            aVVRTk1kOE93NDZ5eEtPMHZGZzB1UEEKLS0tIGZmUkI1OGNxYWZwZTM3NnZJWmgw
+            TGc4eW54T0dHRXEvMEJiR09MWnFmckEKby+2PJjgd5zQBybwkE/GX028DDmf9ghE
+            LShI1pwbBs3h+HmcKV8qFMfO/vUmbta3GtovB3aIf6/5llpdMU/5mA==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-12-02T05:13:24Z"
+    mac: ENC[AES256_GCM,data:u8bmbCwNWoR/bS5EO6KcMZnPRSyiVnbJL+nhy5/QujBOGgQcwzwSJn/rmW2Q/NTHWyKfuwKeEBcUksr4Au3oYF2+j3ziwhkCoMcaViltQrmOTXlk5YzWLSPwA2r8Fqqdh23SZ1/exZDSXVqXnpzZVy52SAdaytIr+zuQ9aOb4Ew=,iv:v+ZGpie3J6NxtG6cguZjfIminejWAAQoGzvcPrsWYM8=,tag:Dfb/JMDWNXwGd5Yb9qUKAw==,type:str]
+    unencrypted_suffix: _unencrypted
+    version: 3.10.2

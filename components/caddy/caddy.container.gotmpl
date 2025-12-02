@@ -1,0 +1,27 @@
+[Unit]
+Description=Caddy
+StartLimitIntervalSec=400
+StartLimitBurst=3
+
+
+[Container]
+Image=docker.io/caddy:{{ .containerTag }}
+ContainerName=caddy
+AddCapability=NET_ADMIN
+Volume=caddy-data.volume:/data
+Volume=caddy-config.volume:/config
+Volume={{ m_dataDir "caddy" }}/conf:/etc/caddy:Z
+
+{{ snippet "autoUpdate" "registry" }}
+
+
+# local web data
+PublishPort=80:80
+
+
+[Service]
+ExecReload=podman exec caddy caddy reload --config /etc/caddy/Caddyfile
+
+[Install]
+# Start by default on boot
+WantedBy=multi-user.target default.target

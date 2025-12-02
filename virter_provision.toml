@@ -1,0 +1,18 @@
+version = 1
+
+[[steps]]
+[steps.shell]
+script = """
+yum install -y rsync podman git
+systemctl enable --now podman.socket
+"""
+
+[[steps]]
+[steps.rsync]
+source = "./install_materia.sh"
+dest = "/root/install_materia.sh"
+
+[[steps]]
+[steps.rsync]
+source = "./age_key.txt"
+dest = "/root/key.txt"

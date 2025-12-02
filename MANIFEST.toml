@@ -1,0 +1,6 @@
+[roles.base]
+components = ["podman_exporter"]
+
+[hosts.materia-demo]
+components = ["caddy"]
+roles = ["base"]
